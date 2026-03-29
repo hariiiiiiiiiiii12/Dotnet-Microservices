@@ -340,3 +340,15 @@ This project demonstrates several important backend engineering concepts:
 * Background services in .NET
 * Kubernetes deployment
 * Distributed system design
+
+
+## Acknowledgement
+
+This project was implemented by following the **.NET Microservices course by Les Jackson**.
+
+The repository is maintained as a personal learning reference and includes my notes and documentation while studying concepts such as:
+
+- Service-to-service communication
+- Event-driven messaging with RabbitMQ
+- gRPC communication
+- Kubernetes deployment
