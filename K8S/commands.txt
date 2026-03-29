@@ -1,0 +1,19 @@
+# Delete the deployment
+kubectl delete deployment mssql-depl
+
+# Delete the services (if any)
+kubectl delete service mssql-clusterip-srv
+kubectl delete service mssql-loadbalancer
+
+# Delete the PVC (if any)
+kubectl delete pvc mssql-claim
+
+# Optionally, delete persistent volumes (if any)
+kubectl get pv
+kubectl delete pv <persistent-volume-name>
+
+# Apply the new deployment configuration
+kubectl apply -f your-deployment-file.yaml
+
+localhost,1433
+password: pa55w0rd!
